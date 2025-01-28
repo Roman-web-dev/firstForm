@@ -18,6 +18,7 @@ body>div {
     flex: 2 1 0 ;
     max-height: 100vh;
     box-sizing: border-box;  
+    max-width: 33vw;
 }
 
 #logoContainer > img {
@@ -76,34 +77,35 @@ body>div {
 }
 
 #formContainer {
-    /* display: flex; */
-    /* padding-bottom: clamp(5%, 1vh, 10px); */
+    display: flex;
+    flex-direction: column;
     flex-grow: 0.8;
-    justify-content: flex-start;
+    justify-content: space-between;
     box-shadow:0 3px 5px rgb(196, 195, 195);
     z-index: 1;
 }
 
 #formContainer  p{
     margin-top: 0;
-    flex-grow: 1;
+
 }
 
 form {
     display: flex;
-    flex-grow: 3;
     flex-direction: column;
-    justify-content:space-evenly;
-    align-items: start;
+    align-items: flex-start;
 }
 
 input{
     width: 95%;
+    border: 1px solid rgb(181, 179, 179);
+    border-radius: 3px;
 }
 
 label{
-    font-size: 10px;
-    letter-spacing: 0.2em;
+    font-size: min(0.6em, 2vw);
+    font-weight: bold;
+    letter-spacing: 0.1em;
 }
 
 #header {
