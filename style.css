@@ -18,7 +18,6 @@ body>div {
     flex: 2 1 0 ;
     max-height: 100vh;
     box-sizing: border-box;  
-    max-width: 33vw;
 }
 
 #logoContainer > img {
@@ -73,7 +72,7 @@ body>div {
 .sections {
     flex: 1 1 0;
     padding: 3%;
-    /* border: black solid; */
+    /* max-height: 33%; */
 }
 
 #formContainer {
@@ -85,9 +84,9 @@ body>div {
     z-index: 1;
 }
 
-#formContainer  p{
+#formContainer > p{
     margin-top: 0;
-
+    font-weight: bold;
 }
 
 form {
@@ -97,13 +96,13 @@ form {
 }
 
 input{
-    width: 95%;
+    width: 85%;
     border: 1px solid rgb(181, 179, 179);
     border-radius: 3px;
 }
 
 label{
-    font-size: min(0.6em, 2vw);
+    font-size: min(0.4em, 2vw);
     font-weight: bold;
     letter-spacing: 0.1em;
 }
