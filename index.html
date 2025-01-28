@@ -26,40 +26,39 @@
         </div>
         <div class="sections" id="formContainer">
             <p>Let's do this!</p>
-            <form action="">
-                <div id="form">
-                    <div class="formBlocks" id="formBlock1">
-                        <div>
-                            <div><label for="">FIRST NAME</label></div>
-                            <input type="text">
-                        </div>
-                        <div>
-                            <div><label for="">EMAIL</label></div>
-                            <input type="text">
-                        </div>
-                        <div>
-                            <div><label for="">PASSWORD</label></div>
-                            <input type="text">
-                        </div>
-                    </div>
-
-                    <div class="formBlocks" id="formBlock2">
-                        <div>
-                            <div><label for="">LAST NAME</label></div>
-                            <input type="text">
-                        </div>
-                        <div>
-                            <div><label for="">PHONE NUMBER</label></div>
-                            <input type="text">
-                        </div>                        
-                        <div>
-                            <div><label for="">CONFIRM PASSWORD</label></div>
-                            <input type="text">
-                        </div>
-                    </div>
-                </div>
-                    
-            </form>  
+            <form action="" method="post">
+                <fieldset>                  
+                  <div>
+                    <div><label for="firstName">FIRST NAME</label></div>
+                    <input type="text" id="firstName" name="firstName" required>
+                  </div>
+                  <div>
+                    <div><label for="lastName">LAST NAME</label></div>
+                    <input type="text" id="lastName" name="lastName" required>
+                  </div>
+                </fieldset>
+              
+                <fieldset> 
+                  <div>
+                    <div><label for="email">EMAIL</label></div>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  <div>
+                    <div><label for="phoneNumber">PHONE NUMBER</label></div>
+                    <input type="tel" id="phoneNumber" name="phoneNumber">
+                  </div>
+                </fieldset>
+              
+                <fieldset>
+                  <div>
+                    <div><label for="password">PASSWORD</label></div>
+                    <input type="password" id="password" name="password" required>
+                  </div>
+                  <div>
+                    <div><label for="confirmPassword">CONFIRM PASSWORD</label></div>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                  </div>
+                </fieldset>
         </div>
         <div class="sections" id="footer">
             <button>Create account</button>
