@@ -7,6 +7,7 @@ body {
     padding: 0;
     display: flex;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 body>div {
     display: flex ;
@@ -70,20 +71,37 @@ body>div {
 
 .sections {
     flex: 1 1 0;
+    padding: 3%;
     /* border: black solid; */
 }
 
 #formContainer {
     /* display: flex; */
+    /* padding-bottom: clamp(5%, 1vh, 10px); */
     flex-grow: 0.8;
+    justify-content: flex-start;
+    box-shadow:0 3px 5px rgb(196, 195, 195);
+    z-index: 1;
 }
 
 #form {
     display: flex;
+    gap: 5vw;
+}
+
+.formBlocks{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 #form input{
-    width: 80%;
+    width: 100%
+}
+
+#form label{
+    font-size: 10px;
+    letter-spacing: 0.2em;
 }
 
 #header {
