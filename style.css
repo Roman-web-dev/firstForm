@@ -1,6 +1,11 @@
-/* :root{
-    
-} */
+@font-face {
+    font-family: 'norsebold';
+    src: url(../fonts/norse-bold-webfont.woff2) format('woff2'),
+         url(../fonts/norse-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 body {
     margin: 0;
@@ -28,7 +33,7 @@ body>div {
 #logo {
     position: absolute;
     display: flex;
-    top: 20.55%;
+    top: 20%;
     width: 100%;
     height: 15%;
     z-index: 1;
@@ -43,11 +48,12 @@ body>div {
 }
 
 #logo > p {
+    font-family: norsebold;
     color: aliceblue;
     flex: 2 1 2;
     padding: 0;
     margin: 0;
-    font-size: clamp(1rem, 5vw, 5rem);
+    font-size: clamp(1.5rem, 7vw, 7rem);
 }
 
 
@@ -62,20 +68,34 @@ body>div {
     z-index: -1;
 }
 
+#photoAuthor{
+    position: absolute;
+    color: white;
+    font-size: 0.8em;
+    top: 93%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.underlined{
+    text-decoration: underline;
+}
+
 #mainContainer {
     flex-direction: column;
     flex: 3 1 0;
 
 }
 
-
 .sections {
     flex: 1 1 0;
     padding: 3%;
-    /* max-height: 33%; */
+    background-color: rgb(250, 250, 250);
 }
 
 #formContainer {
+    background-color: white;
     display: flex;
     flex-direction: column;
     flex-grow: 0.8;
@@ -86,7 +106,7 @@ body>div {
 
 #formContainer > p{
     margin-top: 0;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 form {
@@ -95,31 +115,73 @@ form {
     align-items: flex-start;
 }
 
+fieldset{
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10%;
+}
+
+fieldset > div{
+    width: 100%;
+}
+
 input{
-    width: 85%;
-    border: 1px solid rgb(181, 179, 179);
+    width: 90%;
+    border: 1px solid #E5E7EB;
     border-radius: 3px;
+    aspect-ratio: 10/1;
+}
+
+input:invalid{
+    border: 1px solid red;
+}
+
+input:hover{
+    border: 1px solid blue;
+    box-shadow:3px 3px 4px rgb(220, 220, 220);
 }
 
 label{
-    font-size: min(0.4em, 2vw);
+    font-size: min(0.6em, 1.2vw);
     font-weight: bold;
     letter-spacing: 0.1em;
 }
 
 #header {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
+    font-weight: bold;
+    font-size: 0.95em;
+    align-content: end;
 }
 
 #footer {
-    background-color: azure;
+    /* background-color: azure; */
+    font-size: 0.85em;
 }
 
-fieldset{
-    margin: 0;
-    padding: 0;
-    border: none;
-    display: flex;
-    justify-content: flex-start;
-    gap: 5%;
+a{
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button{
+   background-color: #596D48;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   box-shadow:3px 3px 3px rgb(220, 220, 220);
+   height: clamp(10px, 3vw, 50px);
+   aspect-ratio: 5/1;
+   font-weight: bold;
+   font-size: min(1.2em, 1.2vw);
+}
+
+button:hover{
+    background-color: #61754d;
+    box-shadow:3px 3px 5px rgb(220, 220, 220);
 }
